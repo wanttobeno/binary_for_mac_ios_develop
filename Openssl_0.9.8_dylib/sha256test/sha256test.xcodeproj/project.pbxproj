@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06A38EAC20D7BAE000F668A2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06A38EAB20D7BAE000F668A2 /* main.cpp */; };
+		06A38EBD20D7C22000F668A2 /* libcrypto.0.9.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A38EBB20D7C22000F668A2 /* libcrypto.0.9.8.dylib */; };
+		06A38EBE20D7C22000F668A2 /* libssl.0.9.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A38EBC20D7C22000F668A2 /* libssl.0.9.8.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06A38EA620D7BAE000F668A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06A38EA820D7BAE000F668A2 /* sha256test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sha256test; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A38EAB20D7BAE000F668A2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		06A38EB320D7BCF500F668A2 /* Rel */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Rel; path = ../Openssl/Rel; sourceTree = "<group>"; };
+		06A38EB520D7BD2400F668A2 /* libcrypto.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.8.dylib; path = ../Openssl/Rel/libcrypto.0.9.8.dylib; sourceTree = "<group>"; };
+		06A38EB720D7BD3000F668A2 /* libssl.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.0.9.8.dylib; path = ../Openssl/Rel/libssl.0.9.8.dylib; sourceTree = "<group>"; };
+		06A38EBB20D7C22000F668A2 /* libcrypto.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.8.dylib; path = ../MacOSX/lib/libcrypto.0.9.8.dylib; sourceTree = "<group>"; };
+		06A38EBC20D7C22000F668A2 /* libssl.0.9.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.0.9.8.dylib; path = ../MacOSX/lib/libssl.0.9.8.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06A38EA520D7BAE000F668A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A38EBD20D7C22000F668A2 /* libcrypto.0.9.8.dylib in Frameworks */,
+				06A38EBE20D7C22000F668A2 /* libssl.0.9.8.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06A38E9F20D7BAE000F668A2 = {
+			isa = PBXGroup;
+			children = (
+				06A38EAA20D7BAE000F668A2 /* sha256test */,
+				06A38EA920D7BAE000F668A2 /* Products */,
+				06A38EB220D7BCF500F668A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06A38EA920D7BAE000F668A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06A38EA820D7BAE000F668A2 /* sha256test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06A38EAA20D7BAE000F668A2 /* sha256test */ = {
+			isa = PBXGroup;
+			children = (
+				06A38EAB20D7BAE000F668A2 /* main.cpp */,
+			);
+			path = sha256test;
+			sourceTree = "<group>";
+		};
+		06A38EB220D7BCF500F668A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06A38EBB20D7C22000F668A2 /* libcrypto.0.9.8.dylib */,
+				06A38EBC20D7C22000F668A2 /* libssl.0.9.8.dylib */,
+				06A38EB720D7BD3000F668A2 /* libssl.0.9.8.dylib */,
+				06A38EB520D7BD2400F668A2 /* libcrypto.0.9.8.dylib */,
+				06A38EB320D7BCF500F668A2 /* Rel */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06A38EA720D7BAE000F668A2 /* sha256test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A38EAF20D7BAE000F668A2 /* Build configuration list for PBXNativeTarget "sha256test" */;
+			buildPhases = (
+				06A38EA420D7BAE000F668A2 /* Sources */,
+				06A38EA520D7BAE000F668A2 /* Frameworks */,
+				06A38EA620D7BAE000F668A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sha256test;
+			productName = sha256test;
+			productReference = 06A38EA820D7BAE000F668A2 /* sha256test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06A38EA020D7BAE000F668A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Hi;
+				TargetAttributes = {
+					06A38EA720D7BAE000F668A2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 06A38EA320D7BAE000F668A2 /* Build configuration list for PBXProject "sha256test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06A38E9F20D7BAE000F668A2;
+			productRefGroup = 06A38EA920D7BAE000F668A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06A38EA720D7BAE000F668A2 /* sha256test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06A38EA420D7BAE000F668A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A38EAC20D7BAE000F668A2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		06A38EAD20D7BAE000F668A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		06A38EAE20D7BAE000F668A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		06A38EB020D7BAE000F668A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../MacOSX/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../MacOSX/lib\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		06A38EB120D7BAE000F668A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../MacOSX/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../MacOSX/lib\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06A38EA320D7BAE000F668A2 /* Build configuration list for PBXProject "sha256test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A38EAD20D7BAE000F668A2 /* Debug */,
+				06A38EAE20D7BAE000F668A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A38EAF20D7BAE000F668A2 /* Build configuration list for PBXNativeTarget "sha256test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A38EB020D7BAE000F668A2 /* Debug */,
+				06A38EB120D7BAE000F668A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06A38EA020D7BAE000F668A2 /* Project object */;
+}
